@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.container{
+    background-color: white;
+    height: 500px;
+}
+.wrapper{
+    left: 15%;
+    top: 15%;
+    border-radius: 30px;
+    position: absolute;
+    height: 650px;
+    width: 70%;
+    background-color: rgb(48, 45, 45)
+}
+.contur{
+    height: 80%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.box-left{
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    width: 45%;
+}
+.box-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    width: 45%;
+}
+.box__title{
+    font-size: 27px;
+    color: rgb(226, 57, 57);
+}
+li{
+    font-size: 21px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+#main-ul{
+    margin-top: 10px;
+}
+#input-add{
+    margin-top: 10px;
+    border-color: white;
+}
+#btn-add{
+    background-color: rgb(63, 60, 60);
+    color: white;
+    padding: 11px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+#btn-add:hover{
+    border: 2px solid gray;
+}
+#mistake{
+    display: none;
+    position: absolute;
+    justify-content: space-between;
+    padding: 18px;
+    top: 130px;
+    left: 150px;
+
+    background-color: rgb(245, 206, 206);
+    width: 70%;
+    height: 90px;
+    font-size: 19px;
+    box-sizing: border-box;
+   
+}
+#mistake__empty{
+    display: none;
+    position: absolute;
+    justify-content: space-between;
+    padding: 18px;
+    top: 130px;
+    left: 150px;
+
+    background-color: rgb(245, 206, 206);
+    width: 70%;
+    height: 90px;
+    font-size: 19px;
+    box-sizing: border-box;
+   
+}
+.mistake__title{
+    color: rgb(143, 79, 79);
+    font-weight: bold;
+}
+.mistake__subtitle{
+    color: rgb(185, 99, 99);
+    margin-top: 5px;
+}
+.stick__left{
+    position: absolute;
+    transform:  rotate(44deg);
+    top: 20px;
+    right: 15px;
+    width: 20px;
+    height: 4px;
+    background-color: gray;
+}
+.stick__right{
+    position: absolute;
+    top: 20px;
+    transform:  rotate(131deg);
+    right: 15px;
+    width: 20px;
+    height: 4px;
+    background-color: gray;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #scroll__title:hover{
+            color: tomato;
+            transition: 1s;
+        }
+        
+        #scroll__title{
+            cursor: pointer;
+        }
+        .container{
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 937px;
+            width: 100%;
+            background-color: rgb(209, 209, 209);
+        }
+        #container__bottom{
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 937px;
+            width: 100%;
+            background-color: rgb(209, 209, 209);
+        }
+        .container__middle{
+           display: flex;
+           justify-content: space-between;
+            height: 937px;
+            width: 100%;
+            background-color: white;
+        }
+        #slide__subtitle{
+            position: relative;
+            margin: 100px 0px 0px 100px;
+             font-size: 40px; ;
+        }
+        #slide__subtitle::before{
+            position: absolute;
+            content: '';
+            width: 230px;
+            height:4px;
+            top: 60px;
+            left: 0.5%;
+            background-color: red;
+        }
+        #scroll__bottom{
+            cursor: pointer;
+        }
+        #scroll__bottom:hover{
+            color: rgb(182, 79, 60);
+            transition: 1s;
+        }
+        #slide__photo{
+            margin-top: 400px;
+            height:300px;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id = 'scroll__title'>Scroll down</p>
+    </div>
+    <div class="container__middle">
+        <p id = 'slide__subtitle'>'Slide from left'</p>
+        <img id = 'slide__photo' src = 'd9cb4746719c41768fbb24d598868ea2.jpg'>
+    </div>
+    <div id="container__bottom">
+        <p id = 'scroll__bottom'>Scroll up</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

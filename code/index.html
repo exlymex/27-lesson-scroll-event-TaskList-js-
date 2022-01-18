@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="contur">
+                <div class="box-left">
+                    <div id="mistake__empty" >
+                        <div class="mistake__box">
+                            <p class='mistake__title'>Попередження!</p>
+                            <p class='mistake__subtitle'>Пусте поле не можна добавити</p>
+                        </div>
+                        <div onclick = 'closeMistakeEmpty()' class="mistake__button">
+                            <div class="stick__left"></div>
+                            <div class="stick__right"></div>
+                        </div>
+
+                    </div>
+                    <div id="mistake" >
+                        <div class="mistake__box">
+                            <p class='mistake__title'>Попередження!</p>
+                            <p class='mistake__subtitle'>Останній текст зі списку ви не можете видалити</p>
+                        </div>
+                        <div onclick = 'closeMistake()' class="mistake__button">
+                            <div class="stick__left"></div>
+                            <div class="stick__right"></div>
+                        </div>
+
+                    </div>
+                    <p class='box__title'>Список завдань</p>
+                    <ul id='main-ul'>
+                    </ul>
+                </div>
+                <div class="box-right">
+                    <p class='box__title'>Додати нове завдання</p>
+                    <input id='input-add'>
+                    <div id='btn-add'>Додати</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
